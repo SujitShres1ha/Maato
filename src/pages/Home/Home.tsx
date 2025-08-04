@@ -5,7 +5,6 @@ import { ShoppingCart, Truck, Shield, Leaf, Apple, Carrot, Cherry, Star } from "
 import { FeatureCard, CategoryCard, HeroStats, Section } from "../../components/common/HomeComponents";
 
 function Home() {
-  // Data configuration for easy modification
   const heroStats = [
     { value: "500+", label: "Happy Customers" },
     { value: "100%", label: "Organic" },
@@ -78,7 +77,6 @@ function Home() {
 
   return (
     <>
-      {/* Theme CSS - Consistent with Header */}
       <style>{`
         /* Home-specific theme extensions */
         .theme-hero-bg {
