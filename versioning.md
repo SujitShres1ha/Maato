@@ -1,6 +1,6 @@
 # Git Branching & Semantic Versioning Guide
 
-This project uses **semantic versioning**, **modular branching**, and **per-file version tracking** to ensure clarity, maintainability, and scalability across the frontend and backend.
+This project uses **semantic versioning**, **modular branching** to ensure clarity, maintainability, and scalability across the frontend and backend.
 
 ---
 
@@ -26,10 +26,9 @@ MAJOR.MINOR.PATCH
 ### 🔧 Branch Name Format
 
 ```
-<domain>/<type>/<feature-scope>/<version>
+<feature-scope>/<version>
 ```
 
-**Domains:** `frontend`, `backend`, `shared`, etc.
 **Types:** `feature`, `fix`, `refactor`, `breaking`
 
 > 📌 **Always branch by feature**, not by individual file. For example, if you're building a new product listing page and its UI components, keep both in one branch.
@@ -40,10 +39,10 @@ MAJOR.MINOR.PATCH
 
 | Branch Type | Branch Name                              | Purpose                           |
 | ----------- | ---------------------------------------- | --------------------------------- |
-| Feature     | `frontend/feature/product-listing/1.0.0` | Product listing page + components |
-| Fix         | `frontend/fix/product-listing/1.0.1`     | Fix layout bug on product grid    |
-| Refactor    | `backend/refactor/user-auth/1.1.0`       | Refactor login logic              |
-| Breaking    | `backend/feature/orders/2.0.0`           | Breaking change to orders API     |
+| Feature     | `feature/product-listing/1.0.0` | Product listing page + components |
+| Fix         | `fix/product-listing/1.0.1`     | Fix layout bug on product grid    |
+| Refactor    | `refactor/user-auth/1.1.0`       | Refactor login logic              |
+| Breaking    | `feature/orders/2.0.0`           | Breaking change to orders API     |
 
 ---
 
